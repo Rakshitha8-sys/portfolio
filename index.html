@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakshitha | Computer Science & Engineering Portfolio</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Rakshitha — Computer Science & Engineering Undergraduate at MITE (CGPA: 8.21). Hands-on experience in full-stack web applications, Flutter mobile apps, MySQL database architecture, and Python.">
+  <meta name="keywords" content="Rakshitha, Computer Science, Engineering, Portfolio, Software Engineer, MITE, Flutter, Python, C, MySQL, Web Development">
+  <meta name="author" content="Rakshitha">
+  <meta property="og:title" content="Rakshitha | Computer Science & Engineering Portfolio">
+  <meta property="og:description" content="Explore projects, technical skills, certifications, and academic background of Rakshitha, Aspiring Software Engineer.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/professional_photo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+  <!-- Ambient Atmosphere Decor -->
+  <div class="bg-grid-ambient" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" id="nav-brand-logo" aria-label="Rakshitha Portfolio Home">
+        <div class="brand-monogram">R</div>
+        <span>Rakshitha</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active" id="nav-link-hero">Home</a></li>
+          <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+          <li><a href="#education" class="nav-link" id="nav-link-education">Education</a></li>
+          <li><a href="#certifications" class="nav-link" id="nav-link-certifications">Certifications</a></li>
+          <li><a href="#achievements" class="nav-link" id="nav-link-achievements">Achievements</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Resume + Theme Toggle + Mobile Menu) -->
+      <div class="nav-actions">
+        <a href="assets/docs/rakshitha_resume.docx" download="Rakshitha_Resume.docx" class="btn btn-secondary btn-sm" id="nav-resume-btn" title="Download Resume (Docx)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Explicit Segmented Theme Switcher -->
+        <div class="theme-switch" id="nav-theme-switch" role="radiogroup" aria-label="Theme selector">
+          <button type="button" class="theme-opt-btn" data-theme-set="dark" id="theme-btn-dark" aria-label="Dark mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span>Dark</span>
+          </button>
+          <button type="button" class="theme-opt-btn" data-theme-set="light" id="theme-btn-light" aria-label="Light mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <span>Light</span>
+          </button>
+        </div>
+
+        <button type="button" class="mobile-nav-toggle" id="mobile-menu-toggle" aria-label="Toggle Mobile Menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link" id="m-nav-hero"><span>Home</span> →</a></li>
+      <li><a href="#about" class="mobile-nav-link" id="m-nav-about"><span>About</span> →</a></li>
+      <li><a href="#skills" class="mobile-nav-link" id="m-nav-skills"><span>Skills</span> →</a></li>
+      <li><a href="#projects" class="mobile-nav-link" id="m-nav-projects"><span>Projects</span> →</a></li>
+      <li><a href="#education" class="mobile-nav-link" id="m-nav-education"><span>Education</span> →</a></li>
+      <li><a href="#certifications" class="mobile-nav-link" id="m-nav-certifications"><span>Certifications</span> →</a></li>
+      <li><a href="#achievements" class="mobile-nav-link" id="m-nav-achievements"><span>Achievements</span> →</a></li>
+      <li><a href="#contact" class="mobile-nav-link" id="m-nav-contact"><span>Contact</span> →</a></li>
+    </ul>
+    <div style="padding-top: 0.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+      <!-- Mobile Theme Selector -->
+      <div style="padding: 0.85rem 1rem; background: var(--card-inner); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between;">
+        <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary);">Theme Option</span>
+        <div class="theme-switch" id="mobile-theme-switch">
+          <button type="button" class="theme-opt-btn" data-theme-set="dark" id="m-theme-btn-dark">
+            <span>🌙 Dark</span>
+          </button>
+          <button type="button" class="theme-opt-btn" data-theme-set="light" id="m-theme-btn-light">
+            <span>☀️ Light</span>
+          </button>
+        </div>
+      </div>
+
+      <a href="assets/docs/rakshitha_resume.docx" download="Rakshitha_Resume.docx" class="btn btn-primary" id="m-nav-resume">
+        <span>Download Official Resume</span>
+      </a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         1. HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero" aria-label="Introduction and Overview">
+      <div class="container hero-grid">
+        <!-- Hero Left / Content -->
+        <div class="hero-content">
+          <div class="status-pill" id="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Software Engineering Roles & Internships</span>
+          </div>
+
+          <h1 class="hero-name">
+            Hi, I'm <span class="gradient-text">Rakshitha</span>
+          </h1>
+
+          <h2 class="hero-headline">
+            Computer Science & Engineering Undergraduate
+          </h2>
+
+          <div class="hero-subline">
+            Aspiring Software Engineer &bull; Python &bull; C &bull; Flutter &bull; MySQL
+          </div>
+
+          <p class="hero-bio">
+            Computer Science & Engineering student at Mangalore Institute of Technology & Engineering with a strong academic standing (CGPA: 8.21) and hands-on experience building full-stack web and cross-platform mobile applications. Passionate about designing structured databases, robust application logic, and user-focused digital solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+              <span>View My Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">
+              <span>Contact Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/Rakshitha8-sys" target="_blank" rel="noopener noreferrer" class="social-link" id="hero-github-link" title="Visit GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/rakshitha-326725331" target="_blank" rel="noopener noreferrer" class="social-link" id="hero-linkedin-link" title="Visit LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:rakshithaandar@gmail.com" class="social-link" id="hero-email-link" title="Send Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right / Visual Portrait Card -->
+        <div class="hero-visual">
+          <div class="portrait-wrapper">
+            <div class="portrait-glow" aria-hidden="true"></div>
+            
+            <!-- Floating Academic Badge Top Left -->
+            <div class="floating-badge badge-top-left">
+              <div class="floating-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="floating-label">Current Education</div>
+                <div class="floating-val">B.E. CSE @ MITE</div>
+              </div>
+            </div>
+
+            <!-- Floating CGPA Badge Bottom Right -->
+            <div class="floating-badge badge-bottom-right">
+              <div class="floating-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <div class="floating-label">Academic Record</div>
+                <div class="floating-val">CGPA: 8.21 / 10</div>
+              </div>
+            </div>
+
+            <div class="portrait-card">
+              <img src="assets/images/professional_photo.jpg" alt="Rakshitha - Professional Portrait in business attire" class="portrait-img" id="hero-profile-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. ABOUT SECTION
+         ========================================================================== -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background & Profile</span>
+          <h2 class="section-title" id="about-heading">About <span class="gradient-text">Me</span></h2>
+          <p class="section-desc">
+            Computer Science & Engineering undergraduate committed to technical rigor, clean software architecture, and real-world problem solving.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Bio Card -->
+          <div class="glass-card about-narrative">
+            <h3 style="font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 1rem;">
+              Aspiring Software Engineer based in Udupi, Karnataka
+            </h3>
+            <p class="about-p">
+              I am currently pursuing my Bachelor of Engineering in Computer Science & Engineering at <strong>Mangalore Institute of Technology & Engineering</strong> (2023 – Present) maintaining a cumulative GPA of <strong>8.21</strong>.
+            </p>
+            <p class="about-p">
+              My hands-on experience spans building full-stack web and mobile applications. Among my key projects are a real-time cosmetic ingredient conflict detection and safety auditing system, a Flutter-based charitable marketplace app (KindKart), and a specialized SQL healthcare data storage system for ECG signal management.
+            </p>
+            <p class="about-p">
+              I am proficient in C, Python, Flutter, and MySQL, with practical expertise in designing normalized relational schemas, implementing application logic, and collaborating effectively in technical sprints. Active participation in national-level hackathons (including Smart India Hackathon and GCEM Hacks 4.0) and technical workshops keeps me constantly expanding my capabilities.
+            </p>
+
+            <ul class="about-highlights">
+              <li class="about-highlight-item">
+                <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Core Focus:</strong> Software Engineering, Database Systems, Full-Stack & Mobile Development</span>
+              </li>
+              <li class="about-highlight-item">
+                <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Location:</strong> Udupi, Karnataka, India (Open to on-site and remote opportunities)</span>
+              </li>
+              <li class="about-highlight-item">
+                <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Competitive Exposure:</strong> National hackathons & ML technical workshops</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Key Stats Column -->
+          <div class="stats-column">
+            <div class="glass-card stat-card">
+              <div class="stat-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+              </div>
+              <div class="stat-value gradient-text">8.21</div>
+              <div class="stat-label">B.E. Cumulative CGPA</div>
+            </div>
+
+            <div class="glass-card stat-card">
+              <div class="stat-icon" style="color: var(--accent-cyan); background: rgba(56, 189, 248, 0.12);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="stat-value">3</div>
+              <div class="stat-label">Featured Projects</div>
+            </div>
+
+            <div class="glass-card stat-card">
+              <div class="stat-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.12);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div class="stat-value">5</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+
+            <div class="glass-card stat-card">
+              <div class="stat-icon" style="color: var(--accent-teal); background: rgba(20, 184, 166, 0.12);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <div class="stat-value">4</div>
+              <div class="stat-label">Hackathons & Summits</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competence</span>
+          <h2 class="section-title" id="skills-heading">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-desc">
+            Core technologies and platforms grounded directly in academic and hands-on project work, without inflated ratings or arbitrary percentages.
+          </p>
+        </div>
+
+        <!-- Rendered via js/main.js and js/data.js -->
+        <div class="skills-grid" id="skills-container"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. PROJECTS SECTION
+         ========================================================================== -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Applied Engineering</span>
+          <h2 class="section-title" id="projects-heading">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-desc">
+            Practical applications built to address real-world challenges in consumer safety, donation transparency, and healthcare data storage.
+          </p>
+        </div>
+
+        <!-- Rendered via js/main.js and js/data.js -->
+        <div class="projects-grid" id="projects-container"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. EDUCATION SECTION
+         ========================================================================== -->
+    <section id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Journey</span>
+          <h2 class="section-title" id="education-heading">Education & <span class="gradient-text">Qualifications</span></h2>
+          <p class="section-desc">
+            Chronological academic foundation demonstrating consistent high performance and analytical aptitude.
+          </p>
+        </div>
+
+        <!-- Rendered via js/main.js and js/data.js -->
+        <div class="timeline-container" id="education-timeline"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. CERTIFICATIONS SECTION
+         ========================================================================== -->
+    <section id="certifications" aria-labelledby="certifications-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Verified Credentials</span>
+          <h2 class="section-title" id="certifications-heading">Courses & <span class="gradient-text">Certifications</span></h2>
+          <p class="section-desc">
+            Verified course completions and certifications from recognized institutions including NPTEL (IIT Kharagpur) and NxtWave.
+          </p>
+        </div>
+
+        <!-- Rendered via js/main.js and js/data.js -->
+        <div class="cert-grid" id="certifications-container"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. ACHIEVEMENTS & ACTIVITIES SECTION
+         ========================================================================== -->
+    <section id="achievements" aria-labelledby="achievements-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">National Events & Technical Forums</span>
+          <h2 class="section-title" id="achievements-heading">Achievements & <span class="gradient-text">Activities</span></h2>
+          <p class="section-desc">
+            Active engagements in national hackathons, state innovation summits, and deep learning technical workshops.
+          </p>
+        </div>
+
+        <!-- Rendered via js/main.js and js/data.js -->
+        <div class="achieve-grid" id="achievements-container"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. CONTACT SECTION
+         ========================================================================== -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title" id="contact-heading">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-desc">
+            I am actively seeking software engineering roles, internships, and project collaborations. Feel free to reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details Card -->
+          <div class="glass-card contact-info-card">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-desc">
+              Have an opportunity, interview question, or collaboration idea? You can reach me via email, phone, or find me on GitHub and LinkedIn.
+            </p>
+
+            <div class="contact-details-list">
+              <!-- Email Row -->
+              <div class="contact-detail-row">
+                <div class="contact-detail-left">
+                  <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <div>
+                    <div class="contact-label">Email Address</div>
+                    <a href="mailto:rakshithaandar@gmail.com" class="contact-value" id="link-direct-email">rakshithaandar@gmail.com</a>
+                  </div>
+                </div>
+                <button type="button" class="copy-btn" id="btn-copy-email" title="Copy email address" aria-label="Copy email address">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Phone Row -->
+              <div class="contact-detail-row">
+                <div class="contact-detail-left">
+                  <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <div>
+                    <div class="contact-label">Phone Number</div>
+                    <a href="tel:+919741050267" class="contact-value" id="link-direct-phone">+91-9741050267</a>
+                  </div>
+                </div>
+                <button type="button" class="copy-btn" id="btn-copy-phone" title="Copy phone number" aria-label="Copy phone number">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Location Row -->
+              <div class="contact-detail-row">
+                <div class="contact-detail-left">
+                  <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <div>
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">Udupi, Karnataka, India</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct CTAs -->
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="mailto:rakshithaandar@gmail.com" class="btn btn-primary" id="btn-mail-direct">
+                <span>Compose Direct Email</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/rakshitha-326725331" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-linkedin-direct">
+                <span>Connect on LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Validated Contact Form -->
+          <div class="glass-card contact-form-card">
+            <h3 class="contact-info-title" style="margin-bottom: 0.5rem;">Send a Message</h3>
+            <p class="contact-info-desc" style="margin-bottom: 1.5rem;">
+              Fill in the form below to immediately draft an email from your default client directly to Rakshitha.
+            </p>
+
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required>
+                <span class="form-error" id="error-name"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                <span class="form-error" id="error-email"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" name="subject" class="form-input" placeholder="e.g. Software Engineer Opportunity / Project Inquiry" required>
+                <span class="form-error" id="error-subject"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <textarea id="form-message" name="message" class="form-textarea" placeholder="Hello Rakshitha, we would love to speak with you regarding..." required></textarea>
+                <span class="form-error" id="error-message"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btn-submit-contact" style="width: 100%;">
+                <span>Send Message via Email Client</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       9. FOOTER
+       ========================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand-wrap">
+        <div class="brand-monogram" style="width: 1.8rem; height: 1.8rem; font-size: 0.95rem;">R</div>
+        <div class="footer-copy">
+          Designed and built by <strong>Rakshitha</strong> &copy; <span id="current-year">2026</span>. All rights reserved.
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero" class="footer-link">Back to Top ↑</a>
+        <span style="color: var(--border-subtle);">&bull;</span>
+        <a href="https://github.com/Rakshitha8-sys" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <span style="color: var(--border-subtle);">&bull;</span>
+        <a href="https://www.linkedin.com/in/rakshitha-326725331" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <span style="color: var(--border-subtle);">&bull;</span>
+        <a href="mailto:rakshithaandar@gmail.com" class="footer-link">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DIALOGS
+       ========================================================================== -->
+  <!-- Project Deep-Dive Modal -->
+  <div class="modal-overlay" id="project-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" onclick="closeAllModals()" aria-label="Close dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div id="project-modal-content">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificate Preview Modal -->
+  <div class="modal-overlay" id="cert-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" onclick="closeAllModals()" aria-label="Close dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div id="cert-modal-content">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Theme Toggle Button -->
+  <button type="button" class="floating-theme-toggle" id="floating-theme-btn" aria-label="Toggle Theme Option" title="Click to toggle between Dark and Light mode">
+    <span id="floating-theme-icon">
+      <!-- Icon injected via JS -->
+    </span>
+    <span id="floating-theme-text">Dark Mode</span>
+  </button>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

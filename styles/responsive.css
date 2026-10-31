@@ -1,0 +1,224 @@
+/* ==========================================================================
+   RAKSHITHA PORTFOLIO - RESPONSIVE BREAKPOINTS & MEDIA QUERIES
+   ========================================================================== */
+
+/* Tablet & Smaller Desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2.5rem;
+  }
+
+  .hero-name {
+    font-size: 2.85rem;
+  }
+
+  .portrait-wrapper {
+    width: 300px;
+  }
+
+  .portrait-img {
+    height: 380px;
+  }
+
+  .projects-grid,
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .stats-column {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 4rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .hero-section {
+    padding-top: calc(var(--nav-height) + 2rem);
+    padding-bottom: 4rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .portrait-wrapper {
+    width: 270px;
+  }
+
+  .portrait-img {
+    height: 330px;
+  }
+
+  .floating-badge.badge-top-left {
+    top: -10px;
+    left: -10px;
+  }
+
+  .floating-badge.badge-bottom-right {
+    bottom: -10px;
+    right: -10px;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-name {
+    font-size: 2.4rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-narrative {
+    padding: 1.75rem;
+  }
+
+  .stats-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .cert-grid,
+  .achieve-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-container::before {
+    left: 1.25rem;
+  }
+
+  .timeline-item {
+    padding-left: 3.25rem;
+  }
+
+  .timeline-marker {
+    left: 0.65rem;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .timeline-card {
+    padding: 1.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-info-card,
+  .contact-form-card {
+    padding: 1.75rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Mobile Small (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 2.1rem;
+  }
+
+  .hero-headline {
+    font-size: 1.2rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .stats-column {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-category-card,
+  .project-card,
+  .achieve-card,
+  .cert-card {
+    padding: 1.5rem;
+  }
+
+  .contact-detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .modal-card {
+    padding: 1.5rem;
+  }
+
+  .toast-container {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .floating-theme-toggle {
+    left: 1rem;
+    bottom: 1rem;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav-theme-switch {
+    display: none;
+  }
+}
